@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif; }
+
+ul,
+li,
+ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: beige; }
+  body .tab_menu {
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    body .tab_menu section {
+      width: 1500px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 10px; }
+      body .tab_menu section ul {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        justify-content: left; }
+        body .tab_menu section ul li {
+          border-top: 1px solid #ddd;
+          border-left: 1px solid #ddd;
+          border-bottom: none;
+          width: calc(100% / 3); }
+          body .tab_menu section ul li a {
+            display: flex;
+            align-items: center;
+            color: #000;
+            padding: 20px; }
+            body .tab_menu section ul li a.on {
+              background: #cbdfc6; }
+              body .tab_menu section ul li a.on .img_box.n1 {
+                background: url(/img/icon1-hover.png);
+                background-size: 40px; }
+              body .tab_menu section ul li a.on .img_box.n2 {
+                background: url(/img/icon2-hover.png);
+                background-size: 40px; }
+              body .tab_menu section ul li a.on .img_box.n3 {
+                background: url(/img/icon3-hover.png);
+                background-size: 40px; }
+            body .tab_menu section ul li a .img_box {
+              width: 40px;
+              height: 40px;
+              transition: all 0.3s;
+              margin-right: 30px; }
+              body .tab_menu section ul li a .img_box.n1 {
+                background: url(/img/icon1.png);
+                background-size: 40px; }
+              body .tab_menu section ul li a .img_box.n2 {
+                background: url(/img/icon2.png);
+                background-size: 40px; }
+              body .tab_menu section ul li a .img_box.n3 {
+                background: url(/img/icon3.png);
+                background-size: 40px; }
+          body .tab_menu section ul li:hover .img_box.n1 {
+            background: url(/img/icon1-hover.png);
+            background-size: 40px; }
+          body .tab_menu section ul li:hover .img_box.n2 {
+            background: url(/img/icon2-hover.png);
+            background-size: 40px; }
+          body .tab_menu section ul li:hover .img_box.n3 {
+            background: url(/img/icon3-hover.png);
+            background-size: 40px; }
+          body .tab_menu section ul li:last-child {
+            border-right: 1px solid #ddd; }
+      body .tab_menu section .group #tab1 {
+        display: block; }
+      body .tab_menu section .group .tab {
+        padding: 80px 50px 100px;
+        display: none; }
+        body .tab_menu section .group .tab .img_box {
+          display: inline-block;
+          width: calc(40%);
+          float: left;
+          text-align: center; }
+          body .tab_menu section .group .tab .img_box img {
+            width: 400px; }
+        body .tab_menu section .group .tab .txt_box {
+          display: inline-block;
+          width: calc(50% - 10px);
+          float: left;
+          margin-bottom: 80px; }
+          body .tab_menu section .group .tab .txt_box h1 {
+            font-size: 40px;
+            letter-spacing: 1.7px;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: roboto; }
+          body .tab_menu section .group .tab .txt_box p {
+            color: #999;
+            line-height: 1.6;
+            font-weight: 200; }
+        body .tab_menu section .group .tab .button_box .button {
+          display: inline-block;
+          width: 200px;
+          height: 50px;
+          line-height: 50px;
+          background: orange;
+          color: #fff;
+          text-align: center;
+          border-radius: 30px;
+          border: 1px solid transparent;
+          transition: all 0.3s;
+          letter-spacing: 1.3;
+          font-weight: bold; }
+          body .tab_menu section .group .tab .button_box .button:hover {
+            background: #fff;
+            color: orange;
+            border: 1px solid orange; }
+          body .tab_menu section .group .tab .button_box .button.n1 {
+            margin-right: 20px; }
+
+/*# sourceMappingURL=style.css.map */
