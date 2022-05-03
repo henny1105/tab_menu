@@ -20,7 +20,7 @@ a {
 // 전체 레이아웃
 
 body {
-    background: beige;
+    background: #f3f3f3;
 
     .tab_menu {
         width: 100%;
@@ -29,6 +29,7 @@ body {
 
         section {
             width: 1500px;
+            height: 700px;
             position: absolute;
             left: 50%;
             top: 50%;
@@ -48,6 +49,33 @@ body {
                     border-bottom: none;
                     width: calc(100% / 3);
 
+                    &:nth-of-type(1) {
+                        a {
+                            &.on {
+                                background: #f4b13e;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        a {
+                            &.on {
+                                background: #8174ba;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        a {
+                            &.on {
+                                background: #3f6d84;
+                                color: #fff;
+                            }
+                        }
+                    }
+
                     a {
                         display: flex;
                         align-items: center;
@@ -56,22 +84,19 @@ body {
 
 
                         &.on {
-                            background: #cbdfc6;
-
                             .img_box {
-
                                 &.n1 {
-                                    background: url(/img/icon1-hover.png);
+                                    background: url(../img/icon1-hover.png);
                                     background-size: 40px;
                                 }
 
                                 &.n2 {
-                                    background: url(/img/icon2-hover.png);
+                                    background: url(../img/icon2-hover.png);
                                     background-size: 40px;
                                 }
 
                                 &.n3 {
-                                    background: url(/img/icon3-hover.png);
+                                    background: url(../img/icon3-hover.png);
                                     background-size: 40px;
                                 }
 
@@ -85,17 +110,17 @@ body {
                             margin-right: 30px;
 
                             &.n1 {
-                                background: url(/img/icon1.png);
+                                background: url(../img/icon1.png);
                                 background-size: 40px;
                             }
 
                             &.n2 {
-                                background: url(/img/icon2.png);
+                                background: url(../img/icon2.png);
                                 background-size: 40px;
                             }
 
                             &.n3 {
-                                background: url(/img/icon3.png);
+                                background: url(../img/icon3.png);
                                 background-size: 40px;
                             }
                         }
@@ -103,17 +128,17 @@ body {
                     }
 
                     &:hover .img_box.n1 {
-                        background: url(/img/icon1-hover.png);
+                        background: url(../img/icon1-hover.png);
                         background-size: 40px;
                     }
 
                     &:hover .img_box.n2 {
-                        background: url(/img/icon2-hover.png);
+                        background: url(../img/icon2-hover.png);
                         background-size: 40px;
                     }
 
                     &:hover .img_box.n3 {
-                        background: url(/img/icon3-hover.png);
+                        background: url(../img/icon3-hover.png);
                         background-size: 40px;
                     }
 
@@ -127,13 +152,58 @@ body {
             .group {
 
                 #tab1 {
-                    display: block; 
+                    display: block;
+
+                    .button_box {
+                        .button {
+                            background: #f4b13e;
+                            color: #fff;
+
+                            &:hover {
+                                background: #fff;
+                                color: #f4b13e;
+                                border: 1px solid #f4b13e;
+                            }
+                        }
+                    }
+                }
+
+                #tab2 {
+
+                    .button_box {
+                        .button {
+                            background: #8174ba;
+                            color: #fff;
+
+                            &:hover {
+                                background: #fff;
+                                color: #8174ba;
+                                border: 1px solid #8174ba;
+                            }
+                        }
+                    }
+                }
+
+                #tab3 {
+
+                    .button_box {
+                        .button {
+                            background: #3f6d84;
+                            color: #fff;
+
+                            &:hover {
+                                background: #fff;
+                                color: #3f6d84;
+                                border: 1px solid #3f6d84;
+                            }
+                        }
+                    }
                 }
 
                 .tab {
                     padding: 80px 50px 100px;
                     display: none;
-                   
+
                     .img_box {
                         display: inline-block;
                         width: calc(40%);

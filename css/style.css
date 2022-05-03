@@ -13,13 +13,14 @@ a {
   text-decoration: none; }
 
 body {
-  background: beige; }
+  background: #f3f3f3; }
   body .tab_menu {
     width: 100%;
     height: 100vh;
     position: relative; }
     body .tab_menu section {
       width: 1500px;
+      height: 700px;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -35,49 +36,77 @@ body {
           border-left: 1px solid #ddd;
           border-bottom: none;
           width: calc(100% / 3); }
+          body .tab_menu section ul li:nth-of-type(1) a.on {
+            background: #f4b13e;
+            color: #fff; }
+          body .tab_menu section ul li:nth-of-type(2) a.on {
+            background: #8174ba;
+            color: #fff; }
+          body .tab_menu section ul li:nth-of-type(3) a.on {
+            background: #3f6d84;
+            color: #fff; }
           body .tab_menu section ul li a {
             display: flex;
             align-items: center;
             color: #000;
             padding: 20px; }
-            body .tab_menu section ul li a.on {
-              background: #cbdfc6; }
-              body .tab_menu section ul li a.on .img_box.n1 {
-                background: url(/img/icon1-hover.png);
-                background-size: 40px; }
-              body .tab_menu section ul li a.on .img_box.n2 {
-                background: url(/img/icon2-hover.png);
-                background-size: 40px; }
-              body .tab_menu section ul li a.on .img_box.n3 {
-                background: url(/img/icon3-hover.png);
-                background-size: 40px; }
+            body .tab_menu section ul li a.on .img_box.n1 {
+              background: url(../img/icon1-hover.png);
+              background-size: 40px; }
+            body .tab_menu section ul li a.on .img_box.n2 {
+              background: url(../img/icon2-hover.png);
+              background-size: 40px; }
+            body .tab_menu section ul li a.on .img_box.n3 {
+              background: url(../img/icon3-hover.png);
+              background-size: 40px; }
             body .tab_menu section ul li a .img_box {
               width: 40px;
               height: 40px;
               transition: all 0.3s;
               margin-right: 30px; }
               body .tab_menu section ul li a .img_box.n1 {
-                background: url(/img/icon1.png);
+                background: url(../img/icon1.png);
                 background-size: 40px; }
               body .tab_menu section ul li a .img_box.n2 {
-                background: url(/img/icon2.png);
+                background: url(../img/icon2.png);
                 background-size: 40px; }
               body .tab_menu section ul li a .img_box.n3 {
-                background: url(/img/icon3.png);
+                background: url(../img/icon3.png);
                 background-size: 40px; }
           body .tab_menu section ul li:hover .img_box.n1 {
-            background: url(/img/icon1-hover.png);
+            background: url(../img/icon1-hover.png);
             background-size: 40px; }
           body .tab_menu section ul li:hover .img_box.n2 {
-            background: url(/img/icon2-hover.png);
+            background: url(../img/icon2-hover.png);
             background-size: 40px; }
           body .tab_menu section ul li:hover .img_box.n3 {
-            background: url(/img/icon3-hover.png);
+            background: url(../img/icon3-hover.png);
             background-size: 40px; }
           body .tab_menu section ul li:last-child {
             border-right: 1px solid #ddd; }
       body .tab_menu section .group #tab1 {
         display: block; }
+        body .tab_menu section .group #tab1 .button_box .button {
+          background: #f4b13e;
+          color: #fff; }
+          body .tab_menu section .group #tab1 .button_box .button:hover {
+            background: #fff;
+            color: #f4b13e;
+            border: 1px solid #f4b13e; }
+      body .tab_menu section .group #tab2 .button_box .button {
+        background: #8174ba;
+        color: #fff; }
+        body .tab_menu section .group #tab2 .button_box .button:hover {
+          background: #fff;
+          color: #8174ba;
+          border: 1px solid #8174ba; }
+      body .tab_menu section .group #tab3 .button_box .button {
+        background: #3f6d84;
+        color: #fff; }
+        body .tab_menu section .group #tab3 .button_box .button:hover {
+          background: #fff;
+          color: #3f6d84;
+          border: 1px solid #3f6d84; }
       body .tab_menu section .group .tab {
         padding: 80px 50px 100px;
         display: none; }
