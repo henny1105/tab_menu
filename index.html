@@ -8,7 +8,15 @@
     <title>탭메뉴</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="js/basic.js"></script>
+    <script defer src="js/myTab.js"></script>
+    <script>
+        //플러그인 호출구문 작성 3-1
+        $(document).ready(function () {
+            $(".tab_menu ul li a").myTab({ //옵션추가
+                active_class: "on"
+            });
+        });
+    </script>
 </head>
 
 <body>
